@@ -1,0 +1,61 @@
+Analyze the formality level of the following text and classify it as "informal", "neutral", or "formal". Provide your answer as a JSON object with a "label" field containing your classification and an "explanation" field with your detailed reasoning.
+
+Here are some examples to guide your analysis:
+
+### Example 1
+```json
+{
+  "text": "Hey! Just wanted to check if ur coming to the party tmrw? It's gonna be super fun! Can't wait to see ya :)",
+  "src": "text message"
+}
+```
+
+Output:
+```json
+{
+  "label": "informal",
+  "explanation": "This text exhibits highly informal qualities including: abbreviated spellings ('ur', 'tmrw'), contractions ('it's', 'can't'), informal expressions ('gonna', 'ya'), casual greeting ('Hey!'), use of emoticon (':)'), exclamation marks for enthusiasm, and first/second person perspective. Note that while this example doesn't contain swearing, the presence of profanity would be another strong indicator of informal language. The source being a text message also aligns with informal communication channels."
+}
+```
+
+### Example 2
+```json
+{
+  "text": "The study found that approximately 65% of participants reported improved sleep quality after implementing the recommended changes. However, researchers noted that further investigation is needed to determine long-term effects.",
+  "src": "news article"
+}
+```
+
+Output:
+```json
+{
+  "label": "neutral",
+  "explanation": "This text demonstrates neutral formality with standard language that is neither highly formal nor casual. It uses complete sentences with proper grammar, reports factual information objectively, avoids personal pronouns, and maintains professional tone while remaining accessible. The vocabulary is straightforward without excessive technical jargon or slang. The source being a news article is consistent with neutral formality targeting general audiences."
+}
+```
+
+### Example 3
+```json
+{
+  "text": "It is hereby declared that the aforementioned property, pursuant to Section 8.3 of the Municipal Development Code, shall be designated as a historical landmark, thus prohibiting any structural modifications without prior written approval from the Historical Preservation Committee.",
+  "src": "legal document"
+}
+```
+
+Output:
+```json
+{
+  "label": "formal",
+  "explanation": "This text displays highly formal characteristics including: specialized legal terminology ('aforementioned', 'pursuant to'), complex sentence structure, passive voice, third-person perspective, no contractions, precise and technical language, regulatory tone, and references to official entities. The source being a legal document further confirms the formal classification as legal texts require maximum precision and formality."
+}
+```
+
+Now analyze this text:
+```json
+{
+  "text": "$text",
+  "src": "$src"
+}
+```
+
+Provide your classification as a JSON object with "label" and "explanation" fields.
