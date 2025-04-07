@@ -241,7 +241,7 @@ Overall, this is the best result out of the three, but the room for improvement 
 | Do you mean consensual? | neutral | informal | formal  | formal  |
 
 This example shows that the performance of the model on `neutral` is still not very good, and it classifies
-the sample as `formal` probably due to the word "consentual", not being able to grasp the neutrality.
+the sample as `formal` probably due to the word "consensual", not being able to grasp the neutrality.
 
 
 
@@ -268,7 +268,7 @@ All of these smaller models cannot, of course, compare to large LLMs, but they a
 ### ⭐ Ideas for future analysis
 
 It would also be interesting to analyse how different aspects of the text influence the 
-assignment of the label, for example, the length of the text, the types of punctuation used or the presence of apostrophe in cases of ontraction.
+assignment of the label, for example, the length of the text, the types of punctuation used or the presence of apostrophe in cases of contraction.
 
 
 
